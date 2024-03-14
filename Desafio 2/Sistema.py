@@ -1,5 +1,7 @@
 import webbrowser
 from Interface.__init__ import *
+from Dados.__init__ import *
+
 cor = {'limpo': '\033[m',
        'branco': '\033[30m',
        'vermelho': '\033[31m',
@@ -39,7 +41,7 @@ while True:
         descriçao = input('Descriçao do personagem:')
         link = input('Link: ')
         programa = input('Programa: ')
-        animador = input('Animador')
+        animador = input('Animador: ')
         adcicionar(nome, descriçao, link, programa, animador)
 
     if resposta == 2:
