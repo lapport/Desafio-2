@@ -10,29 +10,6 @@ cor = {'limpo': '\033[m',
        'azul': '\033[34m',
        'roxo': '\033[35m',
        'ciano': '\033[36m'}
-lista = []
-
-def adcicionar(nome, descriçao, link, programa, animador):
-    personagem = {'Nome': nome,
-                  'descriçao': descriçao,
-                  'link': link,
-                  'programa': programa,
-                  'animador': animador}
-    lista.append(personagem)
-
-
-def mostrar(lista):
-    print("\nLista de Personagens Cadastrados:")
-    for idx, personagem in enumerate(lista, start=1):
-        print(f"\nPersonagem {idx}:")
-        for chave, valor in personagem.items():
-            print(f"{chave}: {valor}")
-
-
-def web(url):
-    navegador = webbrowser.get()
-    navegador.open(url)
-
 
 while True:
     resposta = menu('Menu Principal',['Adicionar personagem', 'Ver pesonagem', 'Sair'])
